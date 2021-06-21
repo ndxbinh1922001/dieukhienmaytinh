@@ -33,3 +33,16 @@ D:\laptrinhmangcanban\điều khiển máy tính\client\obj\Debug\client.exe
 D:\laptrinhmangcanban\điều khiển máy tính\client\obj\Debug\client.pdb
 D:\laptrinhmangcanban\điều khiển máy tính\client\obj\Debug\client.signin.resources
 D:\laptrinhmangcanban\điều khiển máy tính\client\obj\Debug\client.signup.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\bin\Debug\client.exe.config
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\bin\Debug\client.exe
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\bin\Debug\client.pdb
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.Form1.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.khungchat_client.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.signin.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.signup.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.exe
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\client\obj\Debug\client.pdb
