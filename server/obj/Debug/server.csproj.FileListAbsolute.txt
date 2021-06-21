@@ -1,0 +1,38 @@
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.csprojAssemblyReference.cache
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.displayscreen.resources
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.Form1.resources
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.Properties.Resources.resources
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.csproj.GenerateResource.cache
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\Lập trình mạng căn bản\remoteDesktopp\server\bin\Debug\server.exe.config
+D:\Lập trình mạng căn bản\remoteDesktopp\server\bin\Debug\server.exe
+D:\Lập trình mạng căn bản\remoteDesktopp\server\bin\Debug\server.pdb
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.exe
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.pdb
+D:\Lập trình mạng căn bản\remoteDesktopp\server\obj\Debug\server.khungchat_server.resources
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\bin\Debug\server.exe.config
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\bin\Debug\server.exe
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\bin\Debug\server.pdb
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.csprojAssemblyReference.cache
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.displayscreen.resources
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.Form1.resources
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.khungchat_server.resources
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.Properties.Resources.resources
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.csproj.GenerateResource.cache
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.exe
+C:\Users\Admin\OneDrive - Trường ĐH CNTT - University of Information Technology\Máy tính\điều khiển máy tính\server\obj\Debug\server.pdb
+D:\laptrinhmangcanban\điều khiển máy tính\server\bin\Debug\server.exe.config
+D:\laptrinhmangcanban\điều khiển máy tính\server\bin\Debug\server.exe
+D:\laptrinhmangcanban\điều khiển máy tính\server\bin\Debug\server.pdb
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.csprojAssemblyReference.cache
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.displayscreen.resources
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.Form1.resources
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.khungchat_server.resources
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.Properties.Resources.resources
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.csproj.GenerateResource.cache
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.exe
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.pdb
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.signin.resources
+D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.signup.resources
