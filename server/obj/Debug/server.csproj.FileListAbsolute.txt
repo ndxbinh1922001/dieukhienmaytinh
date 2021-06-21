@@ -36,3 +36,17 @@ D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.exe
 D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.pdb
 D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.signin.resources
 D:\laptrinhmangcanban\điều khiển máy tính\server\obj\Debug\server.signup.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.csprojAssemblyReference.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.displayscreen.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.Form1.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.khungchat_server.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.Properties.Resources.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.signin.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.signup.resources
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.csproj.GenerateResource.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.csproj.CoreCompileInputs.cache
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.exe
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\obj\Debug\server.pdb
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\bin\Debug\server.exe.config
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\bin\Debug\server.exe
+C:\Users\binhn\OneDrive\Desktop\dieukhienmaytinh\server\bin\Debug\server.pdb

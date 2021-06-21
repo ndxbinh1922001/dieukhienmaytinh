@@ -35,13 +35,11 @@ namespace client
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(105, 210);
+            this.button1.Location = new System.Drawing.Point(114, 185);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 37);
             this.button1.TabIndex = 9;
@@ -92,33 +90,14 @@ namespace client
             this.label1.TabIndex = 4;
             this.label1.Text = "Đăng ký";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 177);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Port";
-            this.label4.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // tbPort
-            // 
-            this.tbPort.Location = new System.Drawing.Point(84, 174);
-            this.tbPort.Name = "tbPort";
-            this.tbPort.Size = new System.Drawing.Size(168, 20);
-            this.tbPort.TabIndex = 7;
-            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 259);
+            this.ClientSize = new System.Drawing.Size(300, 246);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.tbPort);
             this.Controls.Add(this.tbMK);
             this.Controls.Add(this.tbTK);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -137,7 +116,5 @@ namespace client
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tbPort;
     }
 }
