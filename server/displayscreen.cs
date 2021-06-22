@@ -23,29 +23,32 @@ namespace server
         public Thread receiveMessage;
         public NetworkStream nSteam;
         public int port;
-        public displayscreen(int port)
+        public displayscreen(TcpClient obj1,TcpListener obj2,int port)
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
-            client = new TcpClient();
+            this.client=obj1 as TcpClient;
+            this.server = obj2 as TcpListener;
+            this.port = port;
+            //client = new TcpClient();
             //tạo luồng để lắng nghe kết nối từ client
             listening = new Thread(startListening);
             //tạo luồng nhận dữ liệu màn hình 
             getImage = new Thread(receiveImage);
             //tạo luồng nhận dữ liệu tin nhắn từ client
            
-            this.port = port;
-            server = new TcpListener(IPAddress.Any, port);
+            //this.port = port;
+            //server = new TcpListener(IPAddress.Any, port);
             listening.Start();
         }  
         //hàm lắng nghe kết nối
         private void startListening()
         { 
-            while (!client.Connected)
-            {
-                server.Start();
-                client = server.AcceptTcpClient();
-            }
+            //while (!client.Connected)
+            //{
+            //    server.Start();
+            //    client = server.AcceptTcpClient();
+            //}
             getImage.Start();//bắt đầu nhận dữ liệu hình ảnh
             getImage.Join();
         }
