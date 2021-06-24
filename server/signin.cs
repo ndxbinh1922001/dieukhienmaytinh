@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MongoDB.Bson;
+using MongoDB.Driver;
 namespace server
 {
     public partial class signin : Form
@@ -19,30 +21,29 @@ namespace server
         
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True");
-            string query = "Select * from USERNAME Where dangnhap = " + txtUsername.Text.Trim() + " and matkhau = " + txtPassword.Text.Trim();
-            SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
-            DataTable dtbl = new DataTable();
-            sda.Fill(dtbl);
-            if (dtbl.Rows.Count == 1)
-            {
-                using (SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True")) 
-                {
-                    string str = "select port from USERNAME where (dangnhap=" + txtUsername.Text + " AND matkhau=" + txtPassword.Text + ")";
-                    SqlCommand cmd = new SqlCommand(str,connection);
-                    connection.Open();
-                    var sqlport = cmd.ExecuteScalar();
+            var client = new MongoClient("mongodb+srv://bang:bang123@cluster0.aacbw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            IMongoDatabase db = client.GetDatabase("NT216");
+            var coll = db.GetCollection<BsonDocument>("NT216_case_study");            
+            var filter = Builders<BsonDocument>.Filter.Eq("USERNAME", txtUsername.Text.Trim());
 
-                    string a = sqlport.ToString();
-                    int port = int.Parse(a.Trim());
-                    new Form1(port).Show();
-                    this.Hide();
-                }
+            var doc = coll.Find(filter).FirstOrDefault();
+            if (doc==null)
+            {
+                MessageBox.Show("Tên đăng nhập và mật khẩu không tồn tại.");
+                return;
+            }    
+            string username = doc["USERNAME"].AsString;
+            string password = doc["PASSWORD"].AsString;
+            if (username==txtUsername.Text.Trim()&&password==txtPassword.Text.Trim())
+            {
+                new Form1().Show();
+                this.Hide();
             }
             else
             {
-                MessageBox.Show("Tài khoản hoặc mật khẩu của bạn không đúng.");
+                MessageBox.Show("Mật khẩu của bạn không đúng.");
             }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

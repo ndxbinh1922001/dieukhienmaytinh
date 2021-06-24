@@ -29,16 +29,17 @@ namespace client
         
         public static string a = "";
         
-        public Form1(int port)
+        public Form1()
         {
             InitializeComponent();
-            PortNumber = port;
+            
             CheckForIllegalCrossThreadCalls = false;
         }
         //hàm tạo kết nối đến server và nhận dữ liệu từ server gửi về
         private void btnConnect_Click(object sender, EventArgs e)
         {
             //PortNumber = int.Parse(txtPort.Text);
+            PortNumber = Int32.Parse(tbPort.Text.Trim());
             try
             {
                 client.Connect(txtIP.Text, PortNumber);

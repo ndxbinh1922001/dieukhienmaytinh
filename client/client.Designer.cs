@@ -36,13 +36,15 @@ namespace client
             this.btnScreen = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnChat = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtIP
             // 
             this.txtIP.Location = new System.Drawing.Point(42, 12);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(256, 20);
+            this.txtIP.Size = new System.Drawing.Size(160, 20);
             this.txtIP.TabIndex = 0;
             // 
             // label1
@@ -89,11 +91,30 @@ namespace client
             this.btnChat.UseVisualStyleBackColor = true;
             this.btnChat.Click += new System.EventHandler(this.btnChat_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(208, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 19);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Port";
+            // 
+            // tbPort
+            // 
+            this.tbPort.Location = new System.Drawing.Point(244, 13);
+            this.tbPort.Name = "tbPort";
+            this.tbPort.Size = new System.Drawing.Size(85, 20);
+            this.tbPort.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(341, 140);
+            this.Controls.Add(this.tbPort);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnChat);
             this.Controls.Add(this.btnScreen);
             this.Controls.Add(this.btnConnect);
@@ -114,6 +135,8 @@ namespace client
         private System.Windows.Forms.Button btnScreen;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button btnChat;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbPort;
     }
 }
 

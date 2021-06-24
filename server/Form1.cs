@@ -16,11 +16,11 @@ namespace server
     public partial class Form1 : Form
     {
         public int  port;
-        public Form1(int port)
+        public Form1()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
-            this.port = port;
+            
         }
 
         //IPEndPoint ip;
@@ -28,9 +28,11 @@ namespace server
         List<TcpClient> clientList;
         public void Connect()
         {
+            this.port = Int32.Parse(tbPort.Text.Trim());
             clientList = new List<TcpClient>();
             server = new TcpListener(IPAddress.Any, port);
             server.Start();
+            MessageBox.Show("Server is listening on port " + tbPort.Text);
             Thread listen = new Thread(() =>
             { 
                     while (true)
@@ -65,6 +67,16 @@ namespace server
             //new displayscreen(port).Show();
             //this.Hide();
             Connect();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.IO;
+using MongoDB.Bson;
+using MongoDB.Driver;
 namespace server
 {
     public partial class signup : Form
@@ -21,40 +23,33 @@ namespace server
 
         private void button1_Click(object sender, EventArgs e)
         {
-    
-            SqlConnection sqlcon_test_username = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True");
-            string query_username = "Select * from USERNAME Where dangnhap = " + tbTK.Text;
-            SqlDataAdapter sda = new SqlDataAdapter(query_username, sqlcon_test_username);
-            DataTable dtbl = new DataTable();
-            sda.Fill(dtbl);
-            if (dtbl.Rows.Count!=0)
+
+            //SqlConnection sqlcon_test_username = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True");
+            var client = new MongoClient("mongodb+srv://bang:bang123@cluster0.aacbw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+            IMongoDatabase db = client.GetDatabase("NT216");
+            var coll = db.GetCollection<BsonDocument>("NT216_case_study");
+            try
             {
-                MessageBox.Show("Tên đăng nhập đã tồn tại. Hãy sử dụng tên khác.");
-                return;
-            }    
-            
-            string port_str;
-            bool test_port = false;
-            do
-            {
-                Random port = new Random();
-                port_str = port.Next(2000, 20000).ToString();
-                SqlConnection sqlcontest = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True");
-                string query_test = "Select * from USERNAME Where port=" + port_str;
-                SqlDataAdapter sda1 = new SqlDataAdapter(query_test, sqlcontest);
-                DataTable dtbl1 = new DataTable();
-                sda.Fill(dtbl1);
-                if (dtbl1.Rows.Count == 0)
+                var filter = Builders<BsonDocument>.Filter.Eq("USERNAME", tbTK.Text);
+                var doc = coll.Find(filter).FirstOrDefault();
+                if (doc!=null)
                 {
-                    test_port = true;
-                }
+                    MessageBox.Show("Tên đăng nhập đã tồn tại. Hãy sử dụng tên khác.");
+                    return;
+                }                                    
             }
-            while (!test_port);
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=DESKTOP-1A1OR0G;Initial Catalog=SIGNIN;Integrated Security=True");
-            string query = "INSERT INTO USERNAME VALUES(" + tbTK.Text + "," + tbMK.Text + ","+ port_str + ")";
-            SqlCommand command = new SqlCommand(query, sqlcon);
-            command.Connection.Open();
-            command.ExecuteNonQuery();
+            catch(Exception)
+            {
+               
+            }
+               
+
+            var doc1 = new BsonDocument
+            {
+                {"USERNAME", tbTK.Text.Trim()},
+                {"PASSWORD", tbMK.Text.Trim()}
+            };
+            coll.InsertOne(doc1);
             MessageBox.Show("Đã đăng ký");
         }
         static byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV)
