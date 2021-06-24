@@ -42,7 +42,7 @@ namespace server
             this.button1.Location = new System.Drawing.Point(129, 182);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 37);
-            this.button1.TabIndex = 15;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -52,7 +52,7 @@ namespace server
             this.tbMK.Location = new System.Drawing.Point(99, 132);
             this.tbMK.Name = "tbMK";
             this.tbMK.Size = new System.Drawing.Size(168, 20);
-            this.tbMK.TabIndex = 13;
+            this.tbMK.TabIndex = 2;
             this.tbMK.UseSystemPasswordChar = true;
             // 
             // tbTK
@@ -60,7 +60,7 @@ namespace server
             this.tbTK.Location = new System.Drawing.Point(99, 83);
             this.tbTK.Name = "tbTK";
             this.tbTK.Size = new System.Drawing.Size(168, 20);
-            this.tbTK.TabIndex = 14;
+            this.tbTK.TabIndex = 1;
             // 
             // label3
             // 

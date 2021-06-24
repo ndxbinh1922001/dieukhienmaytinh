@@ -23,8 +23,8 @@ namespace client
         [DllImport("user32")]
         public static extern void LockWorkStation();
         TcpClient client = new TcpClient();
+        
         NetworkStream nStream;
-        Thread formchat;
         public int PortNumber;
         
         public static string a = "";
@@ -42,11 +42,15 @@ namespace client
             PortNumber = Int32.Parse(tbPort.Text.Trim());
             try
             {
-                client.Connect(txtIP.Text, PortNumber);
+                client.Connect(txtIP.Text, PortNumber);                
                 MessageBox.Show("Connect complete");
+                
                 nStream = client.GetStream();
+                
                 Thread thread = new Thread(new ThreadStart(receivedata));
+                thread.IsBackground = true;
                 thread.Start();
+                
                 
             }
             catch (Exception ex)
@@ -120,5 +124,10 @@ namespace client
         {
             new khungchat_client(PortNumber).Show();
         }
+
+        
+
+       
+        
     }
 }

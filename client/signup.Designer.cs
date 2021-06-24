@@ -42,7 +42,7 @@ namespace client
             this.button1.Location = new System.Drawing.Point(114, 185);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 37);
-            this.button1.TabIndex = 9;
+            this.button1.TabIndex = 3;
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -52,14 +52,14 @@ namespace client
             this.tbMK.Location = new System.Drawing.Point(84, 134);
             this.tbMK.Name = "tbMK";
             this.tbMK.Size = new System.Drawing.Size(168, 20);
-            this.tbMK.TabIndex = 7;
+            this.tbMK.TabIndex = 2;
             // 
             // tbTK
             // 
             this.tbTK.Location = new System.Drawing.Point(84, 85);
             this.tbTK.Name = "tbTK";
             this.tbTK.Size = new System.Drawing.Size(168, 20);
-            this.tbTK.TabIndex = 8;
+            this.tbTK.TabIndex = 1;
             // 
             // label3
             // 

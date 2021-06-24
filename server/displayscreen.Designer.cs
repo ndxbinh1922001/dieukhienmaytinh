@@ -79,7 +79,7 @@ namespace server
             // 
             // btnChat
             // 
-            this.btnChat.Location = new System.Drawing.Point(541, 195);
+            this.btnChat.Location = new System.Drawing.Point(541, 194);
             this.btnChat.Name = "btnChat";
             this.btnChat.Size = new System.Drawing.Size(105, 33);
             this.btnChat.TabIndex = 4;

@@ -21,6 +21,7 @@ namespace server
         Socket server;
         Thread receiveMess,sendMess;
         public int port;
+
         public khungchat_server(int port)
         {
             InitializeComponent();
@@ -56,6 +57,17 @@ namespace server
             sendMess = new Thread(send);
             sendMess.Start();
         }
+        bool check_cmd(string a)
+        {
+            if (a.Substring(0, 5) == "cmd>>")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         void receive()
         {
             while (server.Connected)
@@ -65,12 +77,19 @@ namespace server
                 string iv = "1234567890abcdef";
                 byte[] key_byte = System.Text.Encoding.UTF8.GetBytes(key);
                 byte[] iv_byte = System.Text.Encoding.UTF8.GetBytes(iv);
-                byte[] data = new byte[1024];
+                byte[] data = new byte[1024*1024];
                 server.Receive(data);
                 byte[] cipher = remove_padding_array(data);
                 plaintext = DecryptStringFromBytes_Aes(cipher, key_byte, iv_byte);
-                //mess = System.Text.Encoding.UTF8.GetString(data);
-                Addmessager(plaintext);
+                if (check_cmd(plaintext))
+                {
+                    plaintext = plaintext.Substring(5);
+                    richTextBox1.Text = plaintext;
+                }
+                else
+                {
+                    Addmessager(plaintext);
+                }
             }
         }
         void Addmessager(string mess)
@@ -117,7 +136,7 @@ namespace server
             int length = 0;
             for (int i = 0; i < a.Length; i++)
             {
-                if (a[i] == 0)
+                if (a[i] == 0&&a[i+1]==0)
                 {
                     length = i;
                     break;
@@ -131,6 +150,20 @@ namespace server
             }
             return b;
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+            textBox1.Text = "<<clear>>";
+            send();
+            textBox1.Text = "";
+        }
+
         static byte[] EncryptStringToBytes_Aes(string plainText, byte[] Key, byte[] IV)
         {
             // Check arguments.

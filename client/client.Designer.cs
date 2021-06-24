@@ -45,7 +45,7 @@ namespace client
             this.txtIP.Location = new System.Drawing.Point(42, 12);
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(160, 20);
-            this.txtIP.TabIndex = 0;
+            this.txtIP.TabIndex = 1;
             // 
             // label1
             // 
@@ -72,7 +72,7 @@ namespace client
             this.btnScreen.Location = new System.Drawing.Point(182, 54);
             this.btnScreen.Name = "btnScreen";
             this.btnScreen.Size = new System.Drawing.Size(116, 32);
-            this.btnScreen.TabIndex = 3;
+            this.btnScreen.TabIndex = 4;
             this.btnScreen.Text = "Show screen";
             this.btnScreen.UseVisualStyleBackColor = true;
             this.btnScreen.Click += new System.EventHandler(this.btnScreen_Click);
@@ -83,10 +83,10 @@ namespace client
             // 
             // btnChat
             // 
-            this.btnChat.Location = new System.Drawing.Point(90, 101);
+            this.btnChat.Location = new System.Drawing.Point(79, 101);
             this.btnChat.Name = "btnChat";
             this.btnChat.Size = new System.Drawing.Size(149, 27);
-            this.btnChat.TabIndex = 4;
+            this.btnChat.TabIndex = 5;
             this.btnChat.Text = "Chat";
             this.btnChat.UseVisualStyleBackColor = true;
             this.btnChat.Click += new System.EventHandler(this.btnChat_Click);
@@ -106,7 +106,7 @@ namespace client
             this.tbPort.Location = new System.Drawing.Point(244, 13);
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(85, 20);
-            this.tbPort.TabIndex = 6;
+            this.tbPort.TabIndex = 2;
             // 
             // Form1
             // 

@@ -49,7 +49,7 @@ namespace server
             this.tbPort.Location = new System.Drawing.Point(116, 32);
             this.tbPort.Name = "tbPort";
             this.tbPort.Size = new System.Drawing.Size(194, 20);
-            this.tbPort.TabIndex = 3;
+            this.tbPort.TabIndex = 1;
             this.tbPort.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1

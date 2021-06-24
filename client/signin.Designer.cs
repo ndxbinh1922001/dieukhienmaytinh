@@ -43,7 +43,7 @@ namespace client
             this.button1.Location = new System.Drawing.Point(218, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 27);
-            this.button1.TabIndex = 16;
+            this.button1.TabIndex = 5;
             this.button1.Text = "Đăng ký";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -55,7 +55,7 @@ namespace client
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(228, 22);
-            this.txtPassword.TabIndex = 14;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
@@ -63,7 +63,7 @@ namespace client
             this.txtUsername.Location = new System.Drawing.Point(112, 21);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(228, 22);
-            this.txtUsername.TabIndex = 15;
+            this.txtUsername.TabIndex = 1;
             // 
             // label2
             // 
@@ -91,7 +91,7 @@ namespace client
             this.btnExit.Location = new System.Drawing.Point(246, 94);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(94, 23);
-            this.btnExit.TabIndex = 10;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
             // 
@@ -101,7 +101,7 @@ namespace client
             this.btnLogin.Location = new System.Drawing.Point(112, 94);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(115, 23);
-            this.btnLogin.TabIndex = 11;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Đăng nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
